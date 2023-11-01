@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.register-login-contents{
+  width: 90%;
+  margin: auto;
+}
+.validation-message{
+  display: none;
+}
+.register-login-contents{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+  background: linear-gradient(left, #3931af, #00c6ff);
+}
+#vendor-login-register{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+.registor-types {
+  width: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  position: relative;
+  margin-top: 30px;
+  justify-content: space-around;
+  background: #0062cc;
+  color: #fff;
+  border-radius: 20px;
+  padding: 1px;
+}
+.registor-types > div {
+  padding: 9px;
+  width: 80px;
+  cursor: pointer;
+}
+.registor-types > div.active {
+  border-radius: 20px;
+  background: #fff;
+  color: #0066cc;
+}
+.vendor-register-contents{
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+}
+.vendor-login-contents {
+  width: 80%;
+  height: 60%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  display: grid;
+  grid-template-rows: 20% 1fr 10%;
+}
+button.toggle-login {
+  width: 60%;
+  margin: auto;
+  padding: 10px;
+  border-radius: 20px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+button.toggle-login:hover{
+  color: #0062cc;
+  border: 2px solid #00c6ff;
+}
+h2.register-title {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+#vendor-registor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 70%;
+  margin: auto;
+  padding: 10px 0 ;
+}
+.vendor-type{
+  display: none;
+}
+.vendor-type.active{
+  display: block;
+}
+.form-group-contents {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+}
+input, select{
+  width: 100%;
+  height: 22px;
+  border: 1px solid #00c6ff;
+  border-radius: 8px;
+  text-indent: 1.5ch;
+}
+select{
+  width: 102%;
+  text-align-last: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}
+input:focus-visible, 
+input:focus-within,
+select:focus-visible, 
+select:focus-within{
+  border-color: #00c6ff;
+  outline: none;
+}
+.from-extra-container {
+  width: 62%;
+  margin: auto;
+  >*{
+    padding: 10px 0;
+  }
+}
+button[data-action="vendor-register"] {
+    padding: 6px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #fff;
+    color: skyblue;
+    background-color: #00ff00;
+}
